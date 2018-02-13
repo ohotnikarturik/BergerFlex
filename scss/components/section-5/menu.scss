@@ -1,0 +1,77 @@
+.menu {
+    background: url("../../../img/Section5/bg-burgers.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__title {
+    margin-left: rem(95px);
+    padding-top: rem(110px);
+    
+    @include tablets {
+        margin-left: rem(30px);
+    }
+
+    @include phones {
+        margin-left: rem(80px);
+        padding-top: rem(70px);
+    }
+}
+
+.menu__acco {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.menu__acco-item {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+// .menu__acco-item--active {
+//     .menu__acco-text {
+//         width: rem(540px);
+//         padding: rem(60px) rem(35px) 0 rem(35px);
+//     }
+// }
+
+.menu__acco-trigger {
+    display: flex;
+    width: rem(79px);
+    text-decoration: none;
+    background-size: cover;
+    max-width: 100%;
+}
+
+@each $menu__acco-trigger in (pic1, pic2, pic3) {
+    .menu__acco-trigger-#{$menu__acco-trigger} {
+        background: url("../../../img/Section5/#{$menu__acco-trigger}.jpg") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+.menu__acco-title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: $white;
+    font-size: rem(40px);
+    @include gagalin();
+    text-decoration: none;
+    margin-bottom: rem(50px);
+    padding: rem(10px);
+}
+
+.menu__acco-text {
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $white;
+    @include ubuntu($style: light);
+    background: rgba(#2f3234, .93);
+    width: 0;
+    overflow: hidden;
+}
+

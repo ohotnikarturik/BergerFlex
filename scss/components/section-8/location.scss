@@ -1,0 +1,101 @@
+.location {
+    background: url("../../../img/Section8/map.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: rem(58px);
+    background: url('../../../img/Section8/footer/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    
+    @include tablets {
+        padding: 0 rem(15px) 0 rem(15px);
+    }
+
+    @include phones {
+        height: rem(115px);
+        padding: 0 rem(15px) 0 rem(15px);
+    }
+}
+
+.footer__container {
+    width: 100%;
+    display: flex;
+    width: rem(940px);
+    margin: 0 auto;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__block {
+    display: block;
+    flex: 1;
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.address {
+    @include ubuntu($style: light);
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    margin-top: rem(5px);
+}
+
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.number__elem-pic {
+    width: rem(12px);
+    height: rem(11px);
+    fill: #e45028;
+    margin-right: rem(12px);
+}
+
+.phon__number {
+    @include ubuntu($style: bold);
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $red;
+    text-decoration: none;
+}
+
+.social-icons__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: rem(20px);
+}
+
+.social-icons__item {
+    margin-right: rem(20px);
+    &:last-child {
+        margin-right: rem(0px);
+    }
+}
+
+.social-icons__elem {
+    width: rem(23px);
+    height: rem(20px);
+    fill: #5c5c5c;
+    &:hover {
+        fill: $white;
+        transition: .5s;
+    }
+}

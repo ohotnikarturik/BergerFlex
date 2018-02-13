@@ -1,0 +1,57 @@
+//colors
+$orange: #e35028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e45028;
+$white: #ffffff;
+
+// resolutions
+$tablets: 768px;
+$phones: 480px;
+
+// config
+@import "config/_variable.scss";
+@import "config/_mixin.scss";
+@import "config/_media.scss";
+
+
+// setting layout
+@import "layout/normalize.scss";
+@import "layout/_fonts.scss";
+@import "layout/_base.scss";
+
+
+// common
+@import "components/common/btn.scss";
+@import "components/common/section__title.scss";
+@import "components/common/navigation.scss";
+
+// components/SECTION-1
+@import "components/section-1/hero.scss";
+
+// components/SECTION-2
+@import "components/section-2/best.scss";
+
+// components/SECTION-3
+@import "components/section-3/order.scss";
+
+// components/SECTION-4
+@import "components/section-4/team.scss";
+
+// components/SECTION-5
+@import "components/section-5/menu.scss";
+
+// components/SECTION-6
+@import "components/section-6/reviews.scss";
+
+// components/SECTION-7
+@import "components/section-7/delivery.scss";
+
+// components/SECTION-8
+@import "components/section-8/location.scss";
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+.order {
+    background: url("../../../img/Section3/Rectangle 1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.order__content {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-button__left {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-button__link-left {
+    width: rem(25px);
+    height: rem(25px);
+    border-right: rem(3px) solid $white;
+    border-bottom: rem(3px) solid $white;
+    transform: rotate(135deg);
+    position: absolute;
+    border-bottom-right-radius: rem(5px);
+}
+
+.content__left {
+    position: relative;
+    display: block;
+    flex: 1;
+}
+
+.composition {
+    position: absolute;
+    border-radius: rem(5px);
+    background-color: rgba(227, 80, 40, 0.4);
+    width: rem(90px);
+    height: rem(90px);
+    text-align: center;
+    padding-top: rem(12px);
+    margin-left: rem(20px);
+    cursor: pointer;
+}
+
+.composition__text {
+    @include gagalin();
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(28px);
+    position: absolute;
+    top: rem(58px);
+    left: rem(24px);
+}
+
+.dropdown__composition {
+    position: absolute;
+    background: #e8e9ea;
+    opacity: .9;
+    width: rem(271px);
+    height: 336;
+    z-index: 1000;
+    top: 0;
+    left: rem(91px);
+    border-radius: rem(5px);
+    display: none;
+}
+
+.composition:hover .dropdown__composition {
+    display: block;
+}
+
+.composition__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: rem(20px);
+}
+
+.img__proposition {
+    margin-top: rem(100px);
+}
+
+.img__proposition-pic {
+    max-width: 95%;
+}
+
+.calories {
+    position: absolute;
+    top: rem(400px);
+    left: rem(20px);
+}
+
+.calories__text {
+    @include gagalin();
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(28px);
+    opacity: 0.5;
+    position: absolute;
+    top: rem(54px);
+    left: rem(16px);
+}
+
+.calories__number {
+    position: absolute;
+    top: rem(26px);
+    left: rem(11px);
+    @include gagalin();
+    color: $white;
+    font-size: rem(20px);
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: rem(24px);
+}
+
+.content__right {
+    display: block;
+    flex: 1;
+}
+
+
+.order__desc-text {
+    @include ubuntu($style: light);
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(24px);
+
+}
+// need to correct
+.order__price {
+    margin-top: rem(47px);
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.order__btn-order {
+    display: inline-block;
+    margin-left: rem(17px);
+    vertical-align: bottom;
+}
+
+.order__value {
+    @include gagalin();
+    color: $orange;
+    font-size: rem(72px);
+    line-height: rem(28px);
+    display: inline-block;
+}
+
+.order__currency {
+    @include gagalin();
+    color: $orange;
+    font-size: rem(30px);
+    line-height: rem(28px);
+    display: inline-block;
+}
+
+.arrow-button__right {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-button__link-right {
+    width: rem(25px);
+    height: rem(25px);
+    border-right: rem(3px) solid $white;
+    border-bottom: rem(3px) solid $white;
+    transform: rotate(-45deg);
+    position: absolute;
+    border-bottom-right-radius: rem(5px);
+}

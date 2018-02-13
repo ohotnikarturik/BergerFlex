@@ -1,0 +1,135 @@
+.team {
+    background: url("../../../img/Section4/SBS_1255-X2.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.team__content {
+    width: 50%;
+
+    @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.team__acco-item {
+    margin-bottom: rem(30px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.team__acco-content {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+
+    @include tablets {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.team__acco-item--active {
+    .team__acco-trigger {
+        color: $yellow;
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+    .team__acco-content {
+        height: auto;
+    }
+}
+
+.team__acco-pic {
+    margin-right: rem(20px);
+    max-width: 100%;
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.team__acco-avatar {
+    max-height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    height: rem(100px);
+    width: rem(100px);
+}
+
+.team__acco-trigger {
+    font-size: rem(14px);
+    color: $white;
+    @include gagalin();
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(15px);
+    line-height: rem(28px);
+
+    @include phones {
+        font-size: rem(25px);
+    }
+    
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: rem(6px) solid transparent;
+        border-bottom-width: 0;
+        border-top-color: $yellow;   
+    }
+}
+
+.team__acco-text {
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__acco-article-title {
+    color: $white;
+    @include ubuntu($style: bold);
+    font-size: rem(14px);
+    margin-bottom: rem(14px);
+}
+
+.team__acco-article-content {
+    color: $white;
+    @include ubuntu($style: light);
+    font-size: rem(14px);
+    line-height: rem(24px);
+
+    @include tablets {
+        text-align: center;
+        margin-bottom: rem(15px);
+    }
+}
