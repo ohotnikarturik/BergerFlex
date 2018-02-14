@@ -395,37 +395,37 @@ template {
 
 @font-face {
   font-family: 'gagalin';
-  src: url("gagalin-regular-webfont.woff") format("woff");
+  src: url("../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'lifehack';
-  src: url("lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("ubuntu-light-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("ubuntu-medium-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'ubuntu';
-  src: url("ubuntu-regular-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -588,7 +588,7 @@ footer {
     transform: translate(-50%, -50%); }
 
 .hero {
-  background: url("../../../img/Section1/texture.jpg") center center no-repeat;
+  background: url("../img/Section1/texture.jpg") center center no-repeat;
   background-size: cover; }
 
 .hero__container {
@@ -765,7 +765,7 @@ footer {
   bottom: 0; }
 
 .best {
-  background: url("../../../img/Section2/bg.jpg") center center no-repeat;
+  background: url("../img/Section2/bg.jpg") center center no-repeat;
   background-size: cover; }
 
 .best__title-best {
@@ -838,7 +838,7 @@ footer {
     fill: #99c657; }
 
 .order {
-  background: url("../../../img/Section3/Rectangle 1.jpg") center center no-repeat;
+  background: url("../img/Section3/Rectangle 1.jpg") center center no-repeat;
   background-size: cover; }
 
 .order__content {
@@ -1010,7 +1010,7 @@ footer {
   border-bottom-right-radius: 0.3125rem; }
 
 .team {
-  background: url("../../../img/Section4/SBS_1255-X2.jpg") center center no-repeat;
+  background: url("../img/Section4/SBS_1255-X2.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1099,17 +1099,18 @@ footer {
 
 .team__acco-pic {
   margin-right: 1.25rem;
-  max-width: 100%; }
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  width: 100px; }
   @media screen and (max-width: 768px) {
     .team__acco-pic {
       margin-right: 0; } }
 
 .team__acco-avatar {
-  max-height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  height: 6.25rem;
-  width: 6.25rem; }
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px); }
 
 .team__acco-trigger {
   font-size: 0.875rem;
@@ -1168,7 +1169,7 @@ footer {
       margin-bottom: 0.9375rem; } }
 
 .menu {
-  background: url("../../../img/Section5/bg-burgers.jpg") center center no-repeat;
+  background: url("../img/Section5/bg-burgers.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1209,15 +1210,15 @@ footer {
   max-width: 100%; }
 
 .menu__acco-trigger-pic1 {
-  background: url("../../../img/Section5/pic1.jpg") center center no-repeat;
+  background: url("../img/Section5/pic1.jpg") center center no-repeat;
   background-size: cover; }
 
 .menu__acco-trigger-pic2 {
-  background: url("../../../img/Section5/pic2.jpg") center center no-repeat;
+  background: url("../img/Section5/pic2.jpg") center center no-repeat;
   background-size: cover; }
 
 .menu__acco-trigger-pic3 {
-  background: url("../../../img/Section5/pic3.jpg") center center no-repeat;
+  background: url("../img/Section5/pic3.jpg") center center no-repeat;
   background-size: cover; }
 
 .menu__acco-title {
@@ -1364,7 +1365,7 @@ footer {
       display: inline-block; } }
 
 .delivery {
-  background: url("../../../img/Section7/bg-texture.jpg") center center no-repeat;
+  background: url("../img/Section7/bg-texture.jpg") center center no-repeat;
   background-size: cover; }
 
 .form {
@@ -1532,7 +1533,7 @@ footer {
 
 .form__checkbox-fake:after {
   content: "";
-  background: url("../../../img/Section7/w.png") no-repeat;
+  background: url("../img/Section7/w.png") no-repeat;
   width: 0.6875rem;
   height: 0.625rem;
   position: absolute;
@@ -1563,7 +1564,7 @@ footer {
   outline: none; }
 
 .location {
-  background: url("../../../img/Section8/map.jpg") center center no-repeat;
+  background: url("../img/Section8/map.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1574,7 +1575,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 3.625rem;
-  background: url("../../../img/Section8/footer/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg") center center no-repeat;
+  background: url("../img/Section8/footer/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg") center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1678,3 +1679,5 @@ footer {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
+
+/*# sourceMappingURL=main.css.map */

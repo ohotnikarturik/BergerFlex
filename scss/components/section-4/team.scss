@@ -1,5 +1,5 @@
 .team {
-    background: url("../../../img/Section4/SBS_1255-X2.jpg") center center no-repeat;
+    background: url("../img/Section4/SBS_1255-X2.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -67,7 +67,10 @@
 
 .team__acco-pic {
     margin-right: rem(20px);
-    max-width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
 
     @include tablets {
         margin-right: 0;
@@ -75,11 +78,7 @@
 }
 
 .team__acco-avatar {
-    max-height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-    height: rem(100px);
-    width: rem(100px);
+    transform: translateX(-20px);
 }
 
 .team__acco-trigger {

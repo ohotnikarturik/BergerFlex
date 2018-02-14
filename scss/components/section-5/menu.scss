@@ -1,5 +1,5 @@
 .menu {
-    background: url("../../../img/Section5/bg-burgers.jpg") center center no-repeat;
+    background: url("../img/Section5/bg-burgers.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -49,7 +49,7 @@
 
 @each $menu__acco-trigger in (pic1, pic2, pic3) {
     .menu__acco-trigger-#{$menu__acco-trigger} {
-        background: url("../../../img/Section5/#{$menu__acco-trigger}.jpg") center center no-repeat;
+        background: url("../img/Section5/#{$menu__acco-trigger}.jpg") center center no-repeat;
         background-size: cover;
     }
 }
