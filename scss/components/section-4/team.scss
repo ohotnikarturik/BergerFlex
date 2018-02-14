@@ -126,6 +126,7 @@
     @include ubuntu($style: light);
     font-size: rem(14px);
     line-height: rem(24px);
+    max-width: rem(208px);
 
     @include tablets {
         text-align: center;

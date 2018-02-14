@@ -14,8 +14,8 @@
 
 .navigation__link {
     display: flex;
-    width: rem(10px);
-    height: rem(10px);
+    width: rem(14px);
+    height: rem(14px);
     border: rem(1px) solid transparent;
     border-radius: 50%;
     position: relative;
@@ -27,8 +27,8 @@
 
     &:before {
         content: "";
-        width: rem(5px);
-        height: rem(5px);
+        width: rem(6px);
+        height: rem(6px);
         display: block;
         border-radius: 50%;
         background: $white;
