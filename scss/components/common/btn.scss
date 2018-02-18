@@ -1,4 +1,6 @@
 .btn {
+    width: rem(97px);
+    height: rem(35px);
     padding: rem(10px);
     text-transform: uppercase;
     text-decoration: none;
@@ -9,6 +11,7 @@
     color: $white;
     display: inline-block;
     transition: .5s;
+    text-align: center;
 
     &:hover {
         background: #c1401e;

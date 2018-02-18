@@ -63,8 +63,12 @@
                             <img src="img/Section1/steamdrops.png" alt="burger" class="hero__picture-img">
                         </div>
                         <div class="hero__right">
-                            <h1 class="section__title">Мы делаем</h1>
-                            <div class="hero__desc-text">натуральные бургеры</div>
+                            <div class="hero-title">
+                                <h1 class="section__title">Мы делаем</h1>
+                            </div>
+                            <div class="hero__desc">
+                                <div class="hero__desc-text">натуральные бургеры</div>
+                            </div>
                         </div>
                     </div>
                     <div class="arrow-button">
@@ -134,8 +138,11 @@
                     <div class="order__content">
                         <div class="arrow-button__left">
                             <a href="#" class="arrow-button__link-left"></a>
+                            <div class="dropdown__fake">
+                                <div class="dropdown__fake-info">Сори, не успел сделать слайдер! Но я продолжаю эту работу!</div>
+                            </div>
                         </div>
-                        <div class="content__left">
+                        <div class="order__left">
                             <div class="composition">
                                 <img src="img/Section3/burgersostav.png" alt="small burger" class="composition__pic">
                                 <span class="composition__text">состав</span>
@@ -183,8 +190,10 @@
                                 <span class="calories__text">ккал</span>
                             </div>
                         </div>
-                        <div class="content__right">
-                            <h2 class="section__title section__title_color_white">dark beef burger</h2>
+                        <div class="order__right">
+                            <div class="content__right-title">
+                                <h2 class="section__title section__title_color_white">dark beef burger</h2>
+                            </div>
                             <p class="order__desc-text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
                                 сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического
                                 соуса чураско.</p>
@@ -198,6 +207,7 @@
                         </div>
                         <div class="arrow-button__right">
                             <a href="#" class="arrow-button__link-right"></a>
+                            <div class="dropdown__fake-info">Сори, не успел сделать слайдер! Но я продолжаю эту работу!</div>
                         </div>
                     </div>
                 </div>
@@ -207,7 +217,9 @@
             <section class="section team">
                 <div class="container team__container">
                     <div class="team__content">
-                        <h2 class="section__title">Команда</h2>
+                        <div class="team__content-title">
+                            <h2 class="section__title">Команда</h2>
+                        </div>
                         <ul class="team__acco">
                             <li class="team__acco-item">
                                 <a href="#" class="team__acco-trigger">
@@ -441,7 +453,9 @@
             <!-- SECTION-7 -->
             <section class="section delivery">
                 <div class="container">
-                    <h2 class="section__title section__title_align_center">Закажите доставку</h2>
+                    <div class="delivery-title">
+                        <h2 class="section__title section__title_align_center">Закажите доставку</h2>
+                    </div>
                     <form action="#" class="form">
                         <div class="form__left">
                             <div class="form__row">
@@ -480,13 +494,13 @@
                             </div>
                         </div>
                         <div class="form__right">
-                            <div class="form__row">
+                            <div class="form__row-textarea">
                                 <label class="form__block-textarea">
                                     <div class="form__title">Комментарий</div>
                                     <textarea class="form__textarea"></textarea>
                                 </label>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row-radio">
                                 <label class="form__radio">
                                     <input type="checkbox" name="review" class="form__radio-elem" checked>
                                     <div class="form__radio-fake"></div>
@@ -518,6 +532,8 @@
 
             <!-- SECTION-8 -->
             <section class="section location">
+                <!-- MAP -->
+                <div id="map"></div>
                 <footer class="footer">
                     <div class=" footer__container">
                         <div class="footer__block">
@@ -600,7 +616,30 @@
                 </ul>
             </div>
         </div>
+    </div>
 
+    <!-- JS MAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.map"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [64.02310168, 23.50516508],
+                zoom: 4
+            });
+
+            myPlacemark = new ymaps.Placemark([64.02310168, 23.50516508], {
+                hintContent: 'Lohtaja!',
+                balloonContent: 'Мой дом'
+            });
+
+            myMap.geoObjects.add(myPlacemark)
+        }
+    </script>
 </body>
 
 </html>

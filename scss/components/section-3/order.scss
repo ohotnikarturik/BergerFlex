@@ -6,16 +6,38 @@
 .order__content {
     display: flex;
     align-items: center;
+    margin-top: rem(142px);
+
+    @include tablets {
+        flex-direction: column;
+        margin-top: rem(222px);
+    }
 }
 
 .arrow-button__left {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: rem(13px);
+    position: relative;
+
+    @include tablets {
+        top: rem(533px);
+        left: rem(47px);
+        z-index: 10;
+        position: absolute;
+    }
+
+    @include phones {
+        top: rem(425px);
+        left: rem(20px);
+        z-index: 10;
+        position: absolute;
+    }
 }
 
 .arrow-button__link-left {
-    width: rem(25px);
-    height: rem(25px);
+    width: rem(20px);
+    height: rem(20px);
     border-right: rem(3px) solid $white;
     border-bottom: rem(3px) solid $white;
     transform: rotate(135deg);
@@ -23,10 +45,39 @@
     border-bottom-right-radius: rem(5px);
 }
 
-.content__left {
-    position: relative;
+.dropdown__fake-info {
+    position: absolute;
+    background: #e8e9ea;
+    opacity: .9;
+    width: rem(271px);
+    top: 0;
+    left: rem(91px);
+    border-radius: rem(5px);
+    z-index: 1000;
+    display: none;
+    padding: rem(10px);
+    left: rem(-150px);
+    border: 2px solid $white;
+}
+
+.arrow-button__left:hover .dropdown__fake-info, 
+.arrow-button__right:hover .dropdown__fake-info {
     display: block;
-    flex: 1;
+}
+
+.order__left {
+    position: relative;
+    max-width: 50%;
+
+    @include tablets {
+        max-width: 76%;
+        text-align: center;
+    }
+
+    @include phones {
+        max-width: 80%;
+        
+    }
 }
 
 .composition {
@@ -37,8 +88,18 @@
     height: rem(90px);
     text-align: center;
     padding-top: rem(12px);
-    margin-left: rem(20px);
+    bottom: rem(295px);
     cursor: pointer;
+
+    @include tablets {
+        bottom: rem(363px);
+        left: rem(20px);
+    }
+
+    @include phones {
+        bottom: rem(345px);
+        left: rem(-50px);
+    }
 }
 
 .composition__text {
@@ -56,8 +117,6 @@
     background: #e8e9ea;
     opacity: .9;
     width: rem(271px);
-    height: 336;
-    z-index: 1000;
     top: 0;
     left: rem(91px);
     border-radius: rem(5px);
@@ -75,18 +134,23 @@
     margin: rem(20px);
 }
 
-.img__proposition {
-    margin-top: rem(100px);
-}
-
 .img__proposition-pic {
-    max-width: 95%;
+    max-width: 99%;
 }
 
 .calories {
     position: absolute;
-    top: rem(400px);
-    left: rem(20px);
+    top: rem(321px);
+
+    @include tablets {
+        top: rem(-100px);
+        right: rem(15px);
+    }
+
+    @include phones {
+        top: rem(-165px);
+        right: rem(-55px);
+    }
 }
 
 .calories__text {
@@ -112,9 +176,19 @@
     line-height: rem(24px);
 }
 
-.content__right {
-    display: block;
-    flex: 1;
+.order__right {
+    max-width: 50%;
+    padding-left: rem(11px);
+
+    @include tablets {
+        max-width: 75%;
+        text-align: center;
+    }
+
+    @include phones {
+        max-width: 97%;
+        
+    }
 }
 
 
@@ -123,6 +197,15 @@
     color: $white;
     font-size: rem(14px);
     line-height: rem(24px);
+    margin-top: rem(43px);
+
+    @include tablets {
+        margin-top: rem(60px);
+    }
+
+    @include phones {
+        margin-top: rem(35px);
+    }
 
 }
 // need to correct
@@ -130,6 +213,14 @@
     margin-top: rem(47px);
     display: inline-block;
     vertical-align: bottom;
+
+    @include tablets {
+        margin-top: rem(65px);
+    }
+
+    @include tablets {
+        margin-top: rem(45px);
+    }
 }
 
 .order__btn-order {
@@ -156,12 +247,28 @@
 
 .arrow-button__right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-bottom: rem(13px);
+    position: relative;
+
+    @include tablets {
+        bottom: rem(545px);
+        right: rem(47px);
+        z-index: 10;
+        position: absolute;
+    }
+
+    @include phones {
+        bottom: rem(475px);
+        left: rem(500px);
+        z-index: 10;
+        position: absolute;
+    }
 }
 
 .arrow-button__link-right {
-    width: rem(25px);
-    height: rem(25px);
+    width: rem(20px);
+    height: rem(20px);
     border-right: rem(3px) solid $white;
     border-bottom: rem(3px) solid $white;
     transform: rotate(-45deg);

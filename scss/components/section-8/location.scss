@@ -1,5 +1,4 @@
 .location {
-    background: url("../img/Section8/map.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -66,7 +65,7 @@
     width: rem(12px);
     height: rem(11px);
     fill: #e45028;
-    margin-right: rem(12px);
+    margin-right: rem(10px);
 }
 
 .phon__number {
@@ -80,11 +79,11 @@
 .social-icons__list {
     display: flex;
     justify-content: flex-end;
-    margin-top: rem(20px);
+    margin-top: rem(18px);
 }
 
 .social-icons__item {
-    margin-right: rem(20px);
+    margin-right: rem(16px);
     &:last-child {
         margin-right: rem(0px);
     }

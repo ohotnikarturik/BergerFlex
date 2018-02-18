@@ -45,6 +45,10 @@
     text-decoration: none;
     background-size: cover;
     max-width: 100%;
+
+    @include tablets {
+        width: rem(85px);
+    }
 }
 
 @each $menu__acco-trigger in (pic1, pic2, pic3) {
@@ -61,7 +65,7 @@
     font-size: rem(40px);
     @include gagalin();
     text-decoration: none;
-    margin-bottom: rem(50px);
+    margin-bottom: rem(30px);
     padding: rem(10px);
 }
 
