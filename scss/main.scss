@@ -10,8 +10,6 @@ $tablets: 768px;
 $phones: 480px;
 
 // config
-@import "config/_variable.scss";
-@import "config/_mixin.scss";
 @import "config/_media.scss";
 
 
@@ -50,6 +48,8 @@ $phones: 480px;
 
 // components/SECTION-8
 @import "components/section-8/location.scss";
+
+
 
 
 
